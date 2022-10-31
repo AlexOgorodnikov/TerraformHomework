@@ -1,11 +1,3 @@
-variable "access_key" {
-        description = "Access key to AWS console"
-}
-variable "secret_key" {
-        description = "Secret key to AWS console"
-}
-
-
 variable "instance_name" {
         description = "Name of the instance to be created"
         default = "hw-terraform"
@@ -27,10 +19,11 @@ variable "ami_id" {
 
 variable "number_of_instances" {
         description = "number of instances to be created"
-        default = 2
+        default = 1
 }
 
 
 variable "ami_key_pair_name" {
-        default = "ansible_key"
+        default = "ansinstances"
 }
+#tested
